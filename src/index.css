@@ -1,0 +1,47 @@
+/* index.css or global.css */
+/* Add this to your global.css or the relevant component's CSS module */
+header {
+  width: 95%;
+  background-color: black; /* Or the color you need */
+  padding: 0;
+  margin: 0;
+  /* Other styles */
+}
+.content {
+  padding-top: 70px; /* Adjust this value to the height of your header */
+}
+.main-content {
+  padding-top: 20px; /* Replace [heightOfYourHeader] with the actual height */
+}
+.hero-background {
+  width: 100%;
+  color: white;
+  background: black; /* Fallback color */
+ /* background: url('../public/texture1.png') center center; */
+  /*background-size: cover;*/
+  /*height: 100vh; /* Adjust the height as needed */
+}
+.hero-section {
+  padding-top: 70px; /* Adjust this value to the height of your header */
+  /* Other styles */
+}
+
+.rest-of-the-page {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+code {
+  color: white;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* In your global.css or a component's CSS module */
+
+
+
