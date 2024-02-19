@@ -43,21 +43,51 @@ function ContactUs() {
       <br />
       <br />
       <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style={{margin: "right"}}>
-        {/* The hidden input named 'form-name' is necessary for Netlify forms to work correctly */}
-        <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-          </label>
-        </p>
-        <label> Your Name </label>
-        <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required /><br/><br/>
-        <label> Your Email </label>
-        <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required /><br/><br/>
-        <label> Your Message </label>
-        <textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} required></textarea><br/><br/>
-        <button type="submit">Send Message</button>
-      </form>
+  <input type="hidden" name="form-name" value="contact" />
+  <p hidden>
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
+  
+  {/* Name field with autocomplete and label association */}
+  <label htmlFor="name">Your Name</label>
+  <input 
+    type="text" 
+    name="name" 
+    id="name" 
+    placeholder="Your Name" 
+    value={formData.name} 
+    onChange={handleChange} 
+    autoComplete="name" 
+    required 
+  /><br/><br/>
+
+  {/* Email field with autocomplete and label association */}
+  <label htmlFor="email">Your Email</label>
+  <input 
+    type="email" 
+    name="email" 
+    id="email" 
+    placeholder="Your Email" 
+    value={formData.email} 
+    onChange={handleChange} 
+    autoComplete="email" 
+    required 
+  /><br/><br/>
+
+  {/* Message field with label association (Note: autocomplete is less relevant here) */}
+  <label htmlFor="message">Your Message</label>
+  <textarea 
+    name="message" 
+    id="message" 
+    placeholder="Your Message" 
+    value={formData.message} 
+    onChange={handleChange} 
+    required
+  ></textarea><br /><br />
+
+  <button type="submit">Send Message</button>
+</form>
+
     </div>
       </div>
     </div>
