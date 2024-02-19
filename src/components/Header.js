@@ -3,7 +3,7 @@ import './Header.css';
 import { FaLinkedin, FaInstagram, FaFacebookSquare } from 'react-icons/fa'; // Ensure you have 'react-icons' installed
 
 function Header() {
-  const logo_src = process.env.PUBLIC_URL+'/hauteu_ar_technologies_inc_logo.jpg'
+  const logo_src = process.env.PUBLIC_URL+'/logo_2.png'
   return (
     <header className="header">
   <div style={{ marginRight: 'auto' }}><img src= {logo_src} alt="Logo" /></div>
@@ -17,7 +17,7 @@ function Header() {
     <a href="#contact-us" className="active-link" style={{ color: 'blue', textDecoration: 'underline' }}>Contact Us</a>
     
   </nav>
-  <div style={{ marginLeft: 'auto', display: 'flex', gap: '15px', fontSize: '1.5rem'  }}>
+  <div style={{ marginLeft: 'auto', display: 'flex', gap: '12px', fontSize: '1.5rem'  }}>
         <a href="https://www.linkedin.com/company/hauteu-ar-technologies-inc/?viewAsMember=true" className="mx-2"><FaLinkedin /></a>
         <a href="https://www.instagram.com/hauteuar/?igshid=NjIwNzIyMDk2Mg%3D%3D" className="mx-2"><FaInstagram /></a>
         <a href="https://facebook.com" className="mx-2"><FaFacebookSquare /></a>
