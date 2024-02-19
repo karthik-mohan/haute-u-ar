@@ -1,12 +1,38 @@
 /* Testimonials Container */
+
+  /* Ensure the testimonial box is centered within the carousel */
+.testimonial-box {
+  margin: 20px auto; /* Center horizontally */
+  text-align: center;
+}
+.carousel .carousel-slider {
+  display: flex;
+  justify-content: center;
+}
+
 .testimonials-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    padding: 20px;
-  }
+  width: 100%; /* Ensures container takes full width */
+  max-width: 400px; /* Or whatever max width you prefer */
+  margin: 0 auto; /* Center the container */
+}
+
+
+/* Additional style to ensure carousel centering */
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center carousel container */
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Add this line to center the children */
+  padding: 20px;
+}
+
   
   /* Individual Testimonial Box */
   .testimonial-box {

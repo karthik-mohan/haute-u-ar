@@ -1,4 +1,4 @@
-import { FaEnvelope, FaPhone, FaAddressCard } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaAddressCard, FaLocationArrow } from 'react-icons/fa';
 import React, { useState } from 'react';
 
 function ContactUs() {
@@ -28,15 +28,15 @@ function ContactUs() {
       <h2 style={{textAlign: "center"}}>Contact Us</h2>
       <div style={{ display: 'flex', alignItems: 'flex-start', fontSize: '1.2rem', left: "10px"}}>
           <div style={{ flex: 1 }}>
-          <div style={{ fontSize: '1.2rem', textAlign: 'left'}}></div>
+          <div style={{ fontSize: '1.2rem', textAlign: 'center', marginLeft: 'auto'}}>
       <h2 style={{textAlign: "center"}}> Our Address</h2>
-     <h3> <FaAddressCard/><p>205-50 Lonsdale Ave, Office #2078</p></h3>
-      <h3><p>North Vancouver, BC, V7M 2E6, Canada</p></h3>
-     <h3> <FaPhone /> <p>Phone: +1 (778) 907-5100</p></h3>
-     <h3><FaEnvelope />   <p>Email: info@closet-ar.com</p></h3>
+     <h4> <FaAddressCard/>205-50 Lonsdale Ave, Office #2078</h4>
+      <h4><FaLocationArrow />North Vancouver, BC, V7M 2E6, Canada</h4>
+     <h4> <FaPhone /> Phone: +1 (778) 907-5100</h4>
+     <h4><FaEnvelope />   Email: info@closet-ar.com</h4>
       </div>
-      
-      <div style={{ flex: 1 }}>
+      </div>
+      <div style={{ flex: 1, textAlign: 'center' }}>
 
       <br />
       <br />

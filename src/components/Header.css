@@ -1,33 +1,37 @@
 /* Header.css */
 .header {
     display: flex;
-    justifyContent: space-between;
-    alignItems: center;
-    padding: 7px;
-    backgroundColor: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
     color: white;
     position: fixed;
     top: 0;
-    background-color: black;
-    padding: 0;
-    margin: 0;
-    zIndex: 10;
-    width: 99%; /* Ensure full width */
-    overflow-x: hidden;
-}
-
-/* Adjustments for tablets */
-@media (max-width: 768px) {
+    left: 10px; /* Ensure header starts at the left edge */
+    right: 10px; /* Ensure header extends to the right edge */
+    z-index: 10;
+    
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  @media (max-width: 768px) {
     .header {
-        flexDirection: 'column'; /* Stack items vertically */
-        padding: 7px; /*Adjust padding */
+      flex-direction: column;
+      padding: 10px;
+      align-items: flex-start; /* Align items to the start to prevent overflow */
     }
-}
-
-/* Adjustments for mobile */
-@media (max-width: 480px) {
+  
+    .header > * {
+      width: 100%; /* Ensure all child elements take up 100% of the header's width */
+      text-align: center; /* Optional: Center-align text */
+      margin-bottom: 5px; /* Add space between elements when stacked */
+    }
+  }
+  
+  @media (max-width: 480px) {
     .header {
-        flexDirection: 'column'; /* Keep items stacked */
-        /*padding: 12px; Adjust padding */
+      padding: 12px;
     }
-}
+  }
+  

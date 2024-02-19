@@ -8,28 +8,46 @@ import 'react-image-gallery/styles/css/image-gallery.css'; // Import the CSS for
 const dressImages = [
   {
     original: process.env.PUBLIC_URL + '/texture1.png',
-    thumbnail: process.env.PUBLIC_URL + '/Dress1.png',
+    thumbnail: process.env.PUBLIC_URL + '/texture1.png',
   },
   {
     original: process.env.PUBLIC_URL + '/texture2.png',
-    thumbnail: process.env.PUBLIC_URL + '/Dress2.png',
+    thumbnail: process.env.PUBLIC_URL + '/texture2.png',
   },
   {
     original: process.env.PUBLIC_URL + '/texture3.png',
-    thumbnail: process.env.PUBLIC_URL + '/Dress3.png',
+    thumbnail: process.env.PUBLIC_URL + '/texture3.png',
   },
   {
-    original: process.env.PUBLIC_URL + '/texture4.png',
+    original: process.env.PUBLIC_URL + '/Dress1.png',
+    thumbnail: process.env.PUBLIC_URL + '/Dress1.png',
+  },
+  {
+    original: process.env.PUBLIC_URL + '/Dress2.png',
+    thumbnail: process.env.PUBLIC_URL + '/Dress2.png',
+  },
+ 
+  {
+    original: process.env.PUBLIC_URL + '/Dress4.png',
     thumbnail: process.env.PUBLIC_URL + '/Dress4.png',
   },
   {
-    original: process.env.PUBLIC_URL + '/Dress5.png',
-    thumbnail: process.env.PUBLIC_URL + '/Dress5.png',
+    original: process.env.PUBLIC_URL + '/features6.png',
+    thumbnail: process.env.PUBLIC_URL + '/features6.png',
   },
   {
-    original: process.env.PUBLIC_URL + '/img2.png',
-    thumbnail: process.env.PUBLIC_URL + '/img2.png',
-  },// Add more dress image paths here
+    original: process.env.PUBLIC_URL + '/features7.png',
+    thumbnail: process.env.PUBLIC_URL + '/features7.png',
+  },
+  {
+    original: process.env.PUBLIC_URL + '/features31.png',
+    thumbnail: process.env.PUBLIC_URL + '/features31.png',
+  }, 
+  {
+    original: process.env.PUBLIC_URL + '/features51.png',
+    thumbnail: process.env.PUBLIC_URL + '/features51.png',
+  },
+  // Add more dress image paths here
 ];
 
 const UserGallery = () => {
