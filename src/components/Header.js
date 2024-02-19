@@ -1,12 +1,11 @@
 import React from 'react';
+import './Header.css';
 import { FaLinkedin, FaInstagram, FaFacebookSquare } from 'react-icons/fa'; // Ensure you have 'react-icons' installed
 
 function Header() {
   const logo_src = process.env.PUBLIC_URL+'/hauteu_ar_technologies_inc_logo.jpg'
   return (
-    <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '7px', backgroundColor: 'black',
-     color: 'white',
-     position: 'fixed',  top: 0,   zIndex: 10  }}>
+    <header className="header">
   <div style={{ marginRight: 'auto' }}><img src= {logo_src} alt="Logo" /></div>
  
   <nav style={{ display: 'flex', gap: '15px', alignItems: 'center', fontWeight: 'bold', fontSize: '1rem' }}>

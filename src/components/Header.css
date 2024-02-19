@@ -1,0 +1,29 @@
+/* Header.css */
+.header {
+    display: flex;
+    justifyContent: space-between;
+    alignItems: center;
+    padding: 7px;
+    backgroundColor: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    zIndex: 10;
+    width: 100%; /* Ensure full width */
+}
+
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+    .header {
+        flexDirection: 'column'; /* Stack items vertically */
+        padding: 7px; /* Adjust padding */
+    }
+}
+
+/* Adjustments for mobile */
+@media (max-width: 480px) {
+    .header {
+        flexDirection: 'column'; /* Keep items stacked */
+        padding: 12px; /* Adjust padding */
+    }
+}
