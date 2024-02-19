@@ -1,7 +1,7 @@
 /* index.css or global.css */
 /* Add this to your global.css or the relevant component's CSS module */
 header {
-  width: 95%;
+  width: 98%;
   background-color: black; /* Or the color you need */
   padding: 0;
   margin: 0;
@@ -13,21 +13,29 @@ header {
 .main-content {
   padding-top: 20px; /* Replace [heightOfYourHeader] with the actual height */
 }
+.active-link {
+  text-decoration: underline;
+}
+
 .hero-background {
   width: 100%;
-  color: white;
+  color: whitesmoke;
+  font-family: 'Montserrat', 'Open Sans',
+    dualspace;
+
   background: black; /* Fallback color */
  /* background: url('../public/texture1.png') center center; */
-  /*background-size: cover;*/
-  /*height: 100vh; /* Adjust the height as needed */
+  /*background-size: cover;
+  height: 100vh; /* Adjust the height as needed */
 }
 .hero-section {
   padding-top: 70px; /* Adjust this value to the height of your header */
+  color: aqua;
   /* Other styles */
 }
 
 .rest-of-the-page {
-  width: 100%;
+
   background-color: black;
   color: white;
 }
@@ -43,5 +51,52 @@ code {
 }
 /* In your global.css or a component's CSS module */
 
+para {
+  color: lightseagreen;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
+/* Testimonials Container */
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual Testimonial Box */
+.testimonial-box {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Testimonial Info (Name, Position, Company) */
+.testimonial-info {
+  text-align: right;
+}
+
+.testimonial-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.testimonial-info p {
+  font-size: 14px;
+  margin: 0;
+  color: #888;
+}
 
