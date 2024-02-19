@@ -1,0 +1,45 @@
+/* Testimonials Container */
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 20px;
+  }
+  
+  /* Individual Testimonial Box */
+  .testimonial-box {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px;
+    color: brown;
+    margin: 20px;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Testimonial Text */
+  .testimonial-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Testimonial Info (Name, Position, Company) */
+  .testimonial-info {
+    text-align: right;
+  }
+  
+  .testimonial-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .testimonial-info p {
+    font-size: 14px;
+    margin: 0;
+    color: black;
+  }
+  

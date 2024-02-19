@@ -1,43 +1,47 @@
-import React, { useState } from 'react';
+import React from 'react';
+import ImageGallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css'; // Import the CSS for styling
 
-const dresses = [
-  { id: 1, image: process.env.PUBLIC_URL + '/texture1.png', title: 'Dress 1' },
-  { id: 2, image: process.env.PUBLIC_URL + '/texture2.png', title: 'Dress 2' },
-  { id: 3, image: process.env.PUBLIC_URL + '/texture3.png', title: 'Dress 3' },
-  { id: 4, image: process.env.PUBLIC_URL + '/texture4.png', title: 'Dress 4' },
-
-  // Add more dresses as needed
+const dressImages = [
+  {
+    original: process.env.PUBLIC_URL + '/texture1.png',
+    thumbnail: process.env.PUBLIC_URL + '/Dress1.png',
+  },
+  {
+    original: process.env.PUBLIC_URL + '/texture2.png',
+    thumbnail: process.env.PUBLIC_URL + '/Dress2.png',
+  },
+  {
+    original: process.env.PUBLIC_URL + '/texture3.png',
+    thumbnail: process.env.PUBLIC_URL + '/Dress3.png',
+  },
+  {
+    original: process.env.PUBLIC_URL + '/texture4.png',
+    thumbnail: process.env.PUBLIC_URL + '/Dress4.png',
+  },
+  {
+    original: process.env.PUBLIC_URL + '/Dress5.png',
+    thumbnail: process.env.PUBLIC_URL + '/Dress5.png',
+  },
+  {
+    original: process.env.PUBLIC_URL + '/img2.png',
+    thumbnail: process.env.PUBLIC_URL + '/img2.png',
+  },// Add more dress image paths here
 ];
 
-function CollectionsShowcase() {
-  const [selectedImage, setSelectedImage] = useState(null);
-
+const CollectionsShowcase = () => {
   return (
-    <div className="py-10 bg-gray-100">
-      <h2 className="text-center text-2xl font-bold">Our Collection</h2>
-      <div className="flex flex-wrap justify-center mt-5">
-        {dresses.map((dress) => (
-          <div key={dress.id} className="m-4">
-            <img
-              src={dress.image}
-              alt={dress.title}
-              className="h-64 w-64 object-cover cursor-pointer"
-              onClick={() => setSelectedImage(dress.image)}
-            />
-            <p className="text-center mt-2">{dress.title}</p>
-          </div>
-        ))}
-      </div>
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
-          onClick={() => setSelectedImage(null)}
-        >
-          <img src={selectedImage} alt="Selected" className="max-h-full max-w-full p-4" />
-        </div>
-      )}
+    <div className="gallery-container">
+      <ImageGallery
+        items={dressImages}
+        showThumbnails={false} // Hide thumbnails
+        showFullscreenButton={false} // Hide fullscreen button
+        showPlayButton={false} // Hide play button
+        slideDuration={500} // Adjust slide transition duration
+        slideInterval={3000} // Adjust slide interval (in milliseconds)
+      />
     </div>
   );
-}
+};
 
 export default CollectionsShowcase;
