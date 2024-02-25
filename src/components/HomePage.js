@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <div id="Home" className="home-page" >
          
-     <h1 style={{textAlign: "center", paddingTop: "40px"}}>Welcome to <i>Haute-u AR</i> technologies</h1>
+     <h1 style={{textAlign: "center", paddingTop: "60px"}}>Welcome to <i>Haute-u AR</i> technologies</h1>
       <main className="main-content">
         
         <section className="left-section">
