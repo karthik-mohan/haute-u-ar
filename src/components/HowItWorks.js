@@ -1,7 +1,7 @@
 import React from 'react';
 
 function HowItWorks() {
-  const img_src = process.env.PUBLIC_URL + '/workflow.png'
+  const img_src = process.env.PUBLIC_URL + '/work_flow.png'
   return (
     <div id="how-it-works" className="text-center py-10 bg-white text-black " style={{marginTop:"100px"}}>
       <h1 className="text-2xl font-bold" style={{textAlign: 'center'}}>How It Works</h1>
