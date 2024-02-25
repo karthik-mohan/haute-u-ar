@@ -2,12 +2,15 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import './HomePage.css'; // Import your CSS file
 
+
 const HomePage = () => {
     const img_src1 = process.env.PUBLIC_URL + '/features1.png'
     const img_src2 = process.env.PUBLIC_URL + '/features2.png'
     const img_src3 = process.env.PUBLIC_URL + '/features3.png'
     const img_src4 = process.env.PUBLIC_URL + '/features5.png'
     const video_src = process.env.PUBLIC_URL + '/haute-u-AR.mp4';
+    const appStoreBadge = process.env.PUBLIC_URL + 'app_store.png'
+    const googlePlayBadge = process.env.PUBLIC_URL +'google-play.png'
   return (
     <div id="Home" className="home-page" >
          
@@ -18,20 +21,26 @@ const HomePage = () => {
            
          
           <h2>Experience Virtual Fashion Like Never Before</h2>
-          <br />
-            
+          
           <p style = {{justifyContent:"center"}}>
             Haute-u AR revolutionizes online shopping by letting you virtually try on clothes from the comfort of your home.
              Our cutting-edge technology seamlessly overlays garments onto your body, allowing you to visualize styles, fits, 
              and colors with remarkable accuracy.
           </p>
-          <br />
           <p>
           Discover your perfect outfit without stepping into a store.
             <b> <i>Haute-U-AR dress try-on app</i> </b> <li>A transformative and convenient shopping experience for users </li>
             <li> Enabling users to visualize how clothes will look on them without the need to physically try them on. </li>
             </p>
-          <button className="try-on-button">Try On Now</button>
+          <button className="try-on-button" onClick={() => document.getElementById('try-on-feature').scrollIntoView()}>Try On Now</button>
+          <div className="download-buttons">
+        <a href="https://apps.apple.com/app/id" target="_blank" rel="noopener noreferrer">
+          <img src={appStoreBadge} alt="Download on the App Store" className="store-badge" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id" target="_blank" rel="noopener noreferrer">
+          <img src={googlePlayBadge} alt="Get it on Google Play" className="store-badge" />
+        </a>
+      </div>
         </section>
  
         <section className="right-section">

@@ -63,3 +63,27 @@
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   }
   
+  .download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .app-store-button,
+  .google-play-button {
+    display: inline-block;
+    background-color: #0071e3; /* Example color for App Store button */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .google-play-button {
+    background-color: #78c257; /* Example color for Google Play button */
+  }
+  
+  /* Adjust the colors, padding, and other styles to match your design */
+  
