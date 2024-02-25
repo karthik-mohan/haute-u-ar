@@ -13,12 +13,12 @@ import HomePage from './components/HomePage';
 
 function App() {
   return (
-    <div className="hero-background">
+    <div className="rest-of-the-page">
       <Header className="fixed w-full bg-black z-10 ..." />
       
         <HomePage />
       
-    <div className="rest-of-the-page">
+ 
       <Features />
       <HowItWorks />
       <TryOnFeatureDetails />
@@ -26,7 +26,7 @@ function App() {
       <UserGallery />
       <ContactUs />
       <Footer />
-    </div>
+    
     
   
      </div>
