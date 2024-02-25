@@ -15,10 +15,7 @@ function App() {
   return (
     <div className="rest-of-the-page">
       <Header className="fixed w-full bg-black z-10 ..." />
-      
-        <HomePage />
-      
- 
+      <HomePage />
       <Features />
       <HowItWorks />
       <TryOnFeatureDetails />
@@ -26,13 +23,8 @@ function App() {
       <UserGallery />
       <ContactUs />
       <Footer />
-    
-    
-  
-     </div>
-   
-  
-  );
+    </div>
+   );
 }
 
 export default App;

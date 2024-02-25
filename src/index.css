@@ -9,7 +9,8 @@
   width: 100%; /* Makes the width responsive */
 }
 .main-content {
-  padding-top: 100px; /* Replace [heightOfYourHeader] with the actual height */
+  padding-top: 150px; /* Replace [heightOfYourHeader] with the actual height */
+  scroll-behavior: smooth;
 }
 .active-link {
   text-decoration: underline;
