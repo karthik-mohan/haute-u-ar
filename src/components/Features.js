@@ -8,6 +8,7 @@ const Features = () => {
     const img_src4 = process.env.PUBLIC_URL + '/fet4.gif'
   return (
     <div id="features" className="features-container" style={{marginTop:"100px"}}>
+      <h1 style={{textAlign: "center"}}>  Features </h1>
       <div className="feature-quadrants">
         <div className="feature">
           <img
@@ -45,7 +46,7 @@ const Features = () => {
             alt="Color Customization Icon"
             className="feature-icon"
           />
-          <h2>Seamless Color Customization</h2>
+          <h2>Color Customization</h2>
           <p>
             Haute-u AR empowers you to explore a spectrum of color options for each
             garment. Simply tap on your desired color, and witness the virtual outfit
@@ -60,7 +61,7 @@ const Features = () => {
             alt="Confident Shopping Icon"
             className="feature-icon"
           />
-          <h2>Confident Shopping Decisions</h2>
+          <h2>Confident Shopping</h2>
           <p>
             Say goodbye to buyer's remorse! Haute-u AR eliminates the uncertainty
             associated with online shopping. By virtually trying on clothes beforehand,

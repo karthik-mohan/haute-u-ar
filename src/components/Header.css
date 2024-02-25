@@ -28,6 +28,14 @@ nav {
   cursor: pointer;
 }
 
+/* Example CSS for sections that will be scrolled into view */
+.section {
+  /* Add padding-top equal to or greater than the height of your fixed header */
+  padding-top: 70px; /* Adjust this value to match your fixed header's height */
+  margin-top: -70px; /* Negative margin equal to padding to maintain document flow */
+  scroll-margin-top: 70px; /* This is a newer property that works in most modern browsers */
+}
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block; /* Show toggle button on mobile */

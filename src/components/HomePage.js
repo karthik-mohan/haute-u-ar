@@ -29,8 +29,7 @@ const HomePage = () => {
           </p>
           <p>
           Discover your perfect outfit without stepping into a store.
-            <b> <i>Haute-U-AR dress try-on app</i> </b> <li>A transformative and convenient shopping experience for users </li>
-            <li> Enabling users to visualize how clothes will look on them without the need to physically try them on. </li>
+            <b> <div style={{color: 'blue'}}> <i> Haute-U-AR dress try-on app</i> </div> </b> <li>  Our first step to reduce returns and cost, there by offering our 2 cents to eco sustainability</li>
             </p>
           <button className="try-on-button" onClick={() => document.getElementById('try-on-feature').scrollIntoView()}>Try On Now</button>
           <div className="download-buttons">

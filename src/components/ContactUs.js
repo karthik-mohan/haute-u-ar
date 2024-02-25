@@ -1,5 +1,6 @@
 import { FaEnvelope, FaPhone, FaAddressCard, FaLocationArrow } from 'react-icons/fa';
 import React, { useState } from 'react';
+import './ContactUs.css'
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -47,8 +48,7 @@ function ContactUs() {
   <p hidden>
     <label>Don’t fill this out: <input name="bot-field" /></label>
   </p>
-  
-  {/* Name field with autocomplete and label association */}
+  <div className="input-group">
   <label htmlFor="name">Your Name</label>
   <input 
     type="text" 
@@ -59,9 +59,10 @@ function ContactUs() {
     onChange={handleChange} 
     autoComplete="name" 
     required 
-  /><br/><br/>
+  />
+</div>
 
-  {/* Email field with autocomplete and label association */}
+<div className="input-group">
   <label htmlFor="email">Your Email</label>
   <input 
     type="email" 
@@ -72,9 +73,10 @@ function ContactUs() {
     onChange={handleChange} 
     autoComplete="email" 
     required 
-  /><br/><br/>
+  />
+</div>
 
-  {/* Message field with label association (Note: autocomplete is less relevant here) */}
+<div className="input-group">
   <label htmlFor="message">Your Message</label>
   <textarea 
     name="message" 
@@ -83,7 +85,8 @@ function ContactUs() {
     value={formData.message} 
     onChange={handleChange} 
     required
-  ></textarea><br /><br />
+  ></textarea>
+</div>
 
   <button type="submit">Send Message</button>
 </form>
