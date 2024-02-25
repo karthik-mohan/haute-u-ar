@@ -1,37 +1,87 @@
-/* Header.css */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 10px; /* Ensure header starts at the left edge */
-    right: 10px; /* Ensure header extends to the right edge */
-    z-index: 10;
-    
-    overflow-x: hidden; /* Prevent horizontal overflow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0 8px; /* Adjust padding as needed */
+  padding-left: 1px; 
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  gap: 15px;
+}
+
+.menu-toggle {
+  display: none; /* Hide toggle button on larger screens */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show toggle button on mobile */
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Hide by default, controlled by React state */
+    background-color: black; /* Match header background */
+    padding-top: 20px; /* Add some spacing */
+  }
+
+  /* Ensure nav is displayed when menuOpen is true, handled by React */
+  .header nav {
+    display: flex; /* Override this with React state in your component */
+  }
+  .header > div {
+    flex-shrink: 0; /* Prevents the div from shrinking smaller than its content */
+  }
+  .header {
+   /* Removes padding on the left */
   }
   
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      padding: 10px;
-      align-items: flex-start; /* Align items to the start to prevent overflow */
-    }
-  
-    .header > * {
-      width: 100%; /* Ensure all child elements take up 100% of the header's width */
-      text-align: center; /* Optional: Center-align text */
-      margin-bottom: 5px; /* Add space between elements when stacked */
-    }
+  .logo-container {
+    margin-left: 0; /* Aligns logo to the far left */
+    padding-left: 1rem; /* Adds a little space from the edge */
   }
-  
-  @media (max-width: 480px) {
-    .header {
-      padding: 12px;
-    }
+  /* For social icons specifically */
+  .social-icons {
+    margin-right: 1rem; /* Adjust as needed for spacing on the right */
+    overflow: visible; /* Ensures content is not clipped */
   }
-  
+  /* Adjust for smaller screens */
+  .header > div, .header nav, .header .menu-toggle {
+    width: 100%; /* Full width */
+  }
+
+  .header nav a {
+    text-align: center; /* Center align links */
+  }
+
+  .header > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Ensure nav and social icons are displayed on larger screens */
+@media (min-width: 769px) {
+  nav, .header > div:last-child {
+    display: flex !important; /* Force display */
+  }
+}

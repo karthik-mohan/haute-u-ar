@@ -10,11 +10,8 @@ const HomePage = () => {
     const video_src = process.env.PUBLIC_URL + '/haute-u-AR.mp4';
   return (
     <div id="Home" className="home-page" >
-         <br />
-            <br />
-            <br />
-            <br />
-     <h1 style={{textAlign: "center"}}>Welcome to <i>Haute-u AR</i> technologies</h1>
+         
+     <h1 style={{textAlign: "center", paddingTop: "40px"}}>Welcome to <i>Haute-u AR</i> technologies</h1>
       <main className="main-content">
         
         <section className="left-section">

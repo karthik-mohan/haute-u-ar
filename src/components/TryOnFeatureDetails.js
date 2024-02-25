@@ -13,7 +13,7 @@ function TryOnFeatureDetails() {
     <div id = "try-on-feature" className="py-10 bg-white text-center" style={{marginTop:"100px"}}>
       <h1 className="text-2xl font-bold" style={{textAlign: 'center'}}>Try On Your Favorite Dress</h1>
       <h3 className="mt-4" style={{textAlign: "center"}}>Upload your photo to try on dresses virtually.</h3>
-      <input type="file" onChange={handleImageChange} className="mt-4" alignSelf="center" />
+      <input type="file" onChange={handleImageChange} className="mt-4" />
       {selectedImage && (
         <div className="mt-4"style={{textAlign: "center"}}>
           <p>Preview:</p>
