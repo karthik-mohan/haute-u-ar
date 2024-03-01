@@ -13,7 +13,7 @@ const MovingParticles = () => {
         const minSpeed = 1;  // Pixels per second
         const maxSpeed = 3;  // Pixels per second
         // **Used here for calculating particle animation duration**
-        const animationDuration = 20;  // Seconds for a particle to cross the screen
+        //*const animationDuration = 20;  // Seconds for a particle to cross the screen
 
         function createParticle() {
             const particle = document.createElement('div');
