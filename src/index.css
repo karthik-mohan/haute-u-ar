@@ -121,3 +121,9 @@ para {
   display: table;
   clear: both;
 }
+
+.app-container {
+    position: relative; /* Allows MovingParticles to position itself */
+    width: 100vw;
+    height: 100vh; /* Ensure it covers the entire viewport */
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 function TryOnFeatureDetails() {
   const [selectedImage, setSelectedImage] = useState(null);
   const img_src1 = process.env.PUBLIC_URL + '/features5.png'

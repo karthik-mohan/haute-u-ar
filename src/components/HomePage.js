@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 import './HomePage.css'; // Import your CSS file
 
 
+
 const HomePage = () => {
     const img_src1 = process.env.PUBLIC_URL + '/features1.png'
     const img_src2 = process.env.PUBLIC_URL + '/features2.png'
@@ -11,7 +12,8 @@ const HomePage = () => {
     const video_src = process.env.PUBLIC_URL + '/haute-u-AR.mp4';
     const appStoreBadge = process.env.PUBLIC_URL + 'app_store.png'
     const googlePlayBadge = process.env.PUBLIC_URL +'google-play.png'
-  return (
+    return (
+       
     <div id="Home" className="home-page" >
          
      <h1 style={{textAlign: "center", paddingTop: "60px"}}>Welcome to <i>Haute-u AR</i> technologies</h1>
@@ -70,7 +72,8 @@ const HomePage = () => {
               </div>
               </div>
               </div>
-    </div>
+            </div>
+    
   );
 };
 

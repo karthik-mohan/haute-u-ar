@@ -52,7 +52,7 @@ const dressImages = [
 
 const UserGallery = () => {
   return (
-    <div className="gallery-container" style={{ height: '30%', alignItems: "center" }}>
+    <div className="gallery-container" style={{ height: '20%', alignItems: "center" }}>
       <ImageGallery
         items={dressImages}
         showThumbnails={true} // Hide thumbnails

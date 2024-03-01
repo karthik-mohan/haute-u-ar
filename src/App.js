@@ -9,13 +9,14 @@ import UserGallery from './components/UserGallery'; // Assume you've implemented
 import Footer from './components/Footer'; // Assume you've implemented this based on previous instructions
 import Testimonials from './components/Testimonials';
 import Features from './components/Features';
-import HomePage from './components/HomePage';
+import Apptryon from './components/App_tryon';
+import MovingParticles from './components/MovingParticles';
 
 function App() {
   return (
     <div className="rest-of-the-page">
       <Header className="fixed w-full bg-black z-10 ..." />
-      <HomePage />
+      <MovingParticles />
       <Features />
       <HowItWorks />
       <TryOnFeatureDetails />
@@ -23,6 +24,8 @@ function App() {
       <UserGallery />
       <ContactUs />
       <Footer />
+      <Apptryon />
+      
     </div>
    );
 }
